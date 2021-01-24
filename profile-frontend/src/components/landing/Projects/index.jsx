@@ -26,7 +26,7 @@ export const Projects = () => {
       .then((response) => response.data)
       .then((repoData) => {
         repoData.sort((a, b) =>
-          a.stargazers_count < b.stargazers_count ? 1 : -1
+          a.updated_at < b.updated_at ? 1 : -1
         );
         console.log(repoData);
         repoData = repoData.slice(0, 10);
@@ -49,10 +49,10 @@ export const Projects = () => {
           >
             <Card theme={theme}>
               <Content>
-                <h4>{node.name}</h4>
+                <h3>{node.name}</h3>
                 <p>{node.description}</p>
               </Content>
-              <Stats theme={theme}>
+               <Stats theme={theme}>
                 <div>
                   <Star color={theme === "light" ? "#000" : "#fff"} />
                   <span>{node.stargazers_count}</span>
@@ -61,7 +61,7 @@ export const Projects = () => {
                   <Fork color={theme === "light" ? "#000" : "#fff"} />
                   <span>{node.forks_count}</span>
                 </div>
-              </Stats>
+             </Stats>  
             </Card>
           </Item>
         ))}
