@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import heroImage from 'assets/illustrations/Header.png';
+import heroImage from 'assets/illustrations/height.png';
 import { greeting, greetingDescription, linkedinUrl, githubUrl, cvLink } from 'data/config';
 import linkedinLogo from 'assets/illustrations/linkedin_logo.png';
 import githubLogo from 'assets/illustrations/github_logo.png';
@@ -42,7 +42,7 @@ export const Intro = () => {
           </div>
         </Details>
         <Thumbnail>
-          <img src={heroImage} alt="Crio.Do" />
+          <img src={heroImage} alt="Chitranshu Gour"/>
         </Thumbnail>
       </IntroWrapper>
     </div>
