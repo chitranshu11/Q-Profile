@@ -82,5 +82,6 @@ export const Thumbnail = styled.div`
 
   img {
     width: 70%;
+    border-radius:8%;
   }
 `;
